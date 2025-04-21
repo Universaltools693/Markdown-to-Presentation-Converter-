@@ -1,0 +1,217 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #1e1e2f, #2a2a4e);
+    color: #fff;
+    line-height: 1.6;
+    min-height: 200vh; /* Ensure long scrollable page */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header */
+header {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 60px 0;
+    text-align: center;
+    border-bottom: 2px solid #00d4ff;
+}
+
+header h1 {
+    font-size: 3rem;
+    color: #00d4ff;
+    text-shadow: 0 0 10px rgba(0, 212, 255, 0.7);
+}
+
+header p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    color: #ccc;
+}
+
+/* Intro Section */
+.intro {
+    padding: 80px 0;
+    text-align: center;
+}
+
+.intro h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #00d4ff;
+}
+
+.intro p {
+    font-size: 1.1rem;
+    max-width: 800px;
+    margin: 0 auto;
+    color: #ddd;
+}
+
+/* Features Section */
+.features {
+    padding: 80px 0;
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.features h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #00d4ff;
+}
+
+.features ul {
+    list-style: none;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.features li {
+    font-size: 1.1rem;
+    margin: 10px 0;
+    padding-left: 20px;
+    position: relative;
+}
+
+.features li::before {
+    content: '✔';
+    color: #00d4ff;
+    position: absolute;
+    left: 0;
+}
+
+/* Tool Section */
+.tool {
+    padding: 100px 0;
+    text-align: center;
+}
+
+.tool h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #00d4ff;
+}
+
+.tool-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#markdown-input {
+    width: 100%;
+    min-height: 200px;
+    padding: 15px;
+    font-size: 1rem;
+    border: 2px solid #00d4ff;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    resize: vertical;
+}
+
+#convert-btn {
+    padding: 15px 30px;
+    font-size: 1.1rem;
+    background: #00d4ff;
+    border: none;
+    border-radius: 8px;
+    color: #1e1e2f;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+#convert-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 212, 255, 0.5);
+}
+
+.preview {
+    min-height: 200px;
+    border: 2px solid #00d4ff;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    text-align: left;
+}
+
+/* FAQ Section */
+.faq {
+    padding: 80px 0;
+}
+
+.faq h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #00d4ff;
+}
+
+.faq-item {
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.faq-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.faq-item p {
+    font-size: 1.1rem;
+    color: #ddd;
+}
+
+/* Ad Placeholders */
+.ad-placeholder {
+    width: 100%;
+    height: 250px; /* Adjustable for banner/video ads */
+    background: rgba(255, 255, 255, 0.1);
+    margin: 30px 0;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ccc;
+    font-size: 1.2rem;
+}
+
+/* Footer */
+footer {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 30px 0;
+    text-align: center;
+    border-top: 2px solid #00d4ff;
+}
+
+footer p {
+    font-size: 1rem;
+    color: #ccc;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .intro h2, .features h2, .tool h2, .faq h2 {
+        font-size: 1.8rem;
+    }
+
+    .ad-placeholder {
+        height: 200px;
+    }
+}
