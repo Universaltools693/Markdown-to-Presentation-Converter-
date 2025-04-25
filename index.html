@@ -3,22 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Convert Markdown to stunning presentations with our fast, reliable, and user-friendly tool. Export to PPT, PDF, or HTML in just a few clicks!">
-    <meta name="keywords" content="markdown to presentation, converter tool, presentation maker, export to ppt, pdf converter, html presentation">
+    <meta name="description" content="Convert Markdown to presentations instantly! Free tool with PPT, PDF, HTML export. Boost productivity with top-rated converter—join now!">
+    <meta name="keywords" content="markdown to presentation, converter tool, presentation maker, export ppt, pdf converter, html presentation, free tools, productivity boost">
     <meta name="robots" content="index, follow">
+    <meta name="author" content="Markdown to Presentation Converter Team">
+    <meta property="og:title" content="Markdown to Presentation Converter">
+    <meta property="og:description" content="Transform Markdown to stunning presentations with our free, fast tool. Export to PPT, PDF, HTML—ideal for developers and presenters!">
+    <meta property="og:image" content="https://yourwebsite.com/preview-image.jpg">
     <title>Markdown to Presentation Converter</title>
     <link rel="stylesheet" href="styles.css">
     <!-- Partners.House Ad Code for Push Notifications -->
     <script type="text/javascript" src="https://hotbkigixa.today/process.js?id=1309849764&p1=sub1&p2=sub2&p3=sub3&p4=sub4" async></script>
-    <!-- Inline Script for Push Notification Prompt Optimization -->
+    <!-- Custom Script for Aggressive Automated Push Notification Triggers -->
     <script>
-        // Ensure push notification prompt shows after a slight delay for better UX
         document.addEventListener("DOMContentLoaded", function() {
-            setTimeout(function() {
-                if ('serviceWorker' in navigator && 'PushManager' in window) {
-                    console.log("Service Worker and Push are supported");
-                }
-            }, 2000); // 2-second delay for better user experience
+            // Ensure service worker is registered
+            if ('serviceWorker' in navigator && 'PushManager' in window) {
+                navigator.serviceWorker.register('/phsw3.js').then(function(registration) {
+                    console.log('Service Worker registered with scope:', registration.scope);
+
+                    // Aggressive request for notification permission
+                    function requestNotificationPermission() {
+                        Notification.requestPermission().then(function(permission) {
+                            if (permission === 'granted') {
+                                console.log('Notification permission granted.');
+                                triggerMultipleNotifications();
+                            } else {
+                                // Retry prompt after 3 seconds if denied
+                                setTimeout(requestNotificationPermission, 3000);
+                            }
+                        });
+                    }
+
+                    // Trigger permission prompt immediately
+                    requestNotificationPermission();
+
+                    // Function to trigger 10 notifications in 15 seconds
+                    function triggerMultipleNotifications() {
+                        const totalNotifications = 10; // 10x ads
+                        const interval = 1500; // 1.5 seconds per notification (15 seconds for 10)
+
+                        for (let i = 1; i <= totalNotifications; i++) {
+                            setTimeout(() => {
+                                registration.showNotification(`Exclusive Offer #${i}`, {
+                                    body: `Claim deal #${i} now! Free tools to boost your presentations!`,
+                                    icon: '/icon.png', // Add your icon (optional)
+                                    data: { url: 'https://markdown-to-presentation-converter.netlify.app' },
+                                    tag: `offer-${i}` // Unique tag to avoid duplicates
+                                }).catch(err => console.error('Notification error:', err));
+                            }, (i - 1) * interval);
+                        }
+                    }
+
+                    // Additional aggressive trigger for low-performing sites
+                    setTimeout(() => {
+                        if (Notification.permission === 'default') {
+                            alert('Allow notifications for exclusive offers and tools!');
+                            requestNotificationPermission();
+                        }
+                    }, 5000); // 5-second fallback
+                }).catch(function(error) {
+                    console.error('Service Worker registration failed:', error);
+                });
+            }
         });
     </script>
 </head>
@@ -27,7 +74,7 @@
     <header>
         <div class="container">
             <h1>Markdown to Presentation Converter</h1>
-            <p>Transform your Markdown files into stunning presentations effortlessly.</p>
+            <p>Transform your Markdown into stunning presentations instantly—start now!</p>
         </div>
     </header>
 
@@ -35,12 +82,11 @@
     <section class="intro">
         <div class="container">
             <h2>Welcome to the Ultimate Conversion Tool</h2>
-            <p>Our advanced tool allows you to convert Markdown files into professional presentations with just a few clicks. Whether you're a developer, educator, or presenter, this tool is designed to make your workflow seamless and efficient.</p>
+            <p>Convert Markdown to pro presentations in seconds. Perfect for developers, educators, and presenters—try it today!</p>
             <!-- Ad Placeholder (Banner/Video) -->
             <div class="ad-placeholder" id="ad-top">
-                <!-- Future Banner Ad Placement (Optional) -->
-                <div style="text-align: center; margin: 20px 0;">
-                    <p>[Banner Ad Space - 728x90 or Video Ad]</p>
+                <div style="text-align: center; margin: 20px 0; background: #f0f0f0; padding: 10px;">
+                    <p>[High-Earning Banner Ad - 728x90]</p>
                 </div>
             </div>
         </div>
@@ -51,16 +97,15 @@
         <div class="container">
             <h2>Why Choose Our Tool?</h2>
             <ul>
-                <li>Fast and reliable Markdown parsing.</li>
-                <li>Customizable presentation templates.</li>
-                <li>Export to multiple formats (PPT, PDF, HTML).</li>
-                <li>Modern, user-friendly interface.</li>
+                <li>Ultra-fast Markdown parsing.</li>
+                <li>Fully customizable templates.</li>
+                <li>Export to PPT, PDF, HTML.</li>
+                <li>Sleek, easy-to-use interface.</li>
             </ul>
             <!-- Ad Placeholder (Interstitial/Banner) -->
             <div class="ad-placeholder" id="ad-middle">
-                <!-- Future Interstitial/Banner Ad Placement (Optional) -->
-                <div style="text-align: center; margin: 20px 0;">
-                    <p>[Interstitial or Banner Ad Space - 300x250]</p>
+                <div style="text-align: center; margin: 20px 0; background: #f0f0f0; padding: 10px;">
+                    <p>[Interstitial Ad - 300x250]</p>
                 </div>
             </div>
         </div>
@@ -84,17 +129,16 @@
             <h2>Frequently Asked Questions</h2>
             <div class="faq-item">
                 <h3>How does the tool work?</h3>
-                <p>Paste your Markdown text, click "Convert," and preview your presentation instantly.</p>
+                <p>Paste Markdown, click "Convert," and see your presentation instantly.</p>
             </div>
             <div class="faq-item">
                 <h3>Can I export my presentation?</h3>
-                <p>Yes, you can export to PPT, PDF, or HTML formats.</p>
+                <p>Yes, export to PPT, PDF, or HTML easily.</p>
             </div>
             <!-- Ad Placeholder (Banner/Video) -->
             <div class="ad-placeholder" id="ad-bottom">
-                <!-- Future Banner Ad Placement (Optional) -->
-                <div style="text-align: center; margin: 20px 0;">
-                    <p>[Banner Ad Space - 728x90 or Video Ad]</p>
+                <div style="text-align: center; margin: 20px 0; background: #f0f0f0; padding: 10px;">
+                    <p>[High-Earning Banner Ad - 728x90]</p>
                 </div>
             </div>
         </div>
